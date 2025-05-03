@@ -1,0 +1,32 @@
+@startuml
+class Usuario {
+  +id: int
+  +nombre: String
+  +email: String
+  +rol: String
+  +registrarse(): boolean
+  +iniciarSesion(): boolean
+}
+class Cita {
+  +id: int
+  +fechaHora: DateTime
+  +estado: String
+  +crear(): boolean
+  +cancelar(): boolean
+}
+class Servicio {
+  +id: int
+  +nombre: String
+  +duracion: int
+  +precio: float
+}
+class Notificacion {
+  +id: int
+  +tipo: String
+  +fechaEnvio: DateTime
+  +enviar(): void
+}
+Usuario "1" -- "*" Cita : crea
+Cita "*" -- "1" Servicio : correspondeA
+Usuario "1" -- "*" Notificacion : recibe
+@enduml
