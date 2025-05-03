@@ -1,0 +1,20 @@
+@startuml
+
+actor Cliente
+actor Administrador
+
+rectangle "Plataforma de Gestión de Citas" {
+  Cliente --> (Registrarse)
+  Cliente --> (Iniciar sesión)
+  Cliente --> (Ver disponibilidad)
+  Cliente --> (Reservar cita)
+  Cliente --> (Cancelar cita)
+  Cliente --> (Recibir notificaciones)
+
+  Administrador --> (Iniciar sesión)
+  Administrador --> (Gestionar citas)
+  Administrador --> (Consultar agenda)
+  Administrador --> (Gestionar disponibilidad)
+}
+
+@enduml
