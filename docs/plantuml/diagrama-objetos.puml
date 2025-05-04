@@ -1,0 +1,24 @@
+@startuml
+
+object cliente1 {
+  id = 1
+  nombre = "Ana Pérez"
+  rol = "Cliente"
+}
+
+object cita1 {
+  id = 101
+  fechaHora = "2025-05-10T14:00"
+  estado = "Pendiente"
+}
+
+object servicio1 {
+  id = 5
+  nombre = "Corte de pelo"
+  duracion = 30
+}
+
+cliente1 -- cita1 : crea
+cita1 -- servicio1 : solicita
+
+@enduml

@@ -1,0 +1,5 @@
+{
+    "plantuml.render": "Local",  // o "PlantUMLServer"
+    "plantuml.server": "https://www.plantuml.com/plantuml",
+    "plantuml.graphvizDotExecutable": "C:\\Program Files\\Graphviz\\bin\\dot.exe"
+  }

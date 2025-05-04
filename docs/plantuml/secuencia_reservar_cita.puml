@@ -1,0 +1,13 @@
+@startuml
+actor Cliente
+participant "Web UI" as UI
+participant "API REST" as API
+participant "Base de Datos" as DB
+
+Cliente -> UI : seleccionar fecha y hora
+UI -> API : POST /citas { fechaHora, usuarioId }
+API -> DB : INSERT INTO citas (...)
+DB --> API : confirmación (OK)
+API --> UI : { estado: "éxito", citaId }
+UI --> Cliente : mostrar mensaje de confirmación
+@enduml

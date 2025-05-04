@@ -1,0 +1,34 @@
+@startuml
+start
+
+:Login;
+if (Usuario válido?) then (sí)
+  if (Rol == Cliente) then (cliente)
+    :Dashboard Cliente;
+    :Ver Calendario;
+    if (Selecciona cita?) then (sí)
+      :Detalle Cita;
+      :Confirmar Reserva;
+      :Mostrar Confirmación;
+      stop
+    else (no)
+      :Volver a Dashboard Cliente;
+      stop
+    endif
+  else (administrador)
+    :Dashboard Admin;
+    :Gestionar Citas;
+    if (Editar o Eliminar?) then (sí)
+      :Modificar/Eliminar Cita;
+      :Actualizar Agenda;
+      stop
+    else (no)
+      :Volver a Dashboard Admin;
+      stop
+    endif
+  endif
+else (no)
+  :Error de Login;
+  stop
+endif
+@enduml

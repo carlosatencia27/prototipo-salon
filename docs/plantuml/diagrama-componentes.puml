@@ -1,0 +1,18 @@
+@startuml
+
+package "Frontend" {
+  [Interfaz Web] as UI
+}
+
+package "Backend" {
+  [API REST] as API
+  [Servicio Notificaciones] as Notif
+}
+
+database "Base de Datos" as DB
+
+UI --> API : llamadas HTTP
+API --> DB : lectura/escritura
+API --> Notif : dispara notificaciones
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+
+[*] --> Pendiente
+
+Pendiente --> Confirmada : reserva exitosa
+Confirmada --> Cancelada : cancelación solicitada
+Pendiente --> Cancelada : cliente cancela antes de confirmar
+
+@enduml
