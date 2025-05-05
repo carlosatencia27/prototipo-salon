@@ -1,40 +1,44 @@
 # Resultados de Pruebas de Usabilidad
 
-| Participante | Tarea           | Éxito | Tiempo (min:seg) | Comentarios                          |
-|--------------|-----------------|-------|------------------|--------------------------------------|
-| Usuario 1    | Registro        |       |                  |                                      |
-| Usuario 1    | Ver disponibilidad |     |                  |                                      |
-| Usuario 1    | Reservar cita   |       |                  |                                      |
-| Usuario 1    | Cancelar cita   |       |                  |                                      |
-| **…**        | …               | …     | …                | …                                    |
+| Participante | Tarea              | Éxito | Tiempo  | Comentarios                          |
+|--------------|--------------------|-------|---------|--------------------------------------|
+| Usuario 1    | Registro           | ✅    | 01:25   | Fácil de entender                    |
+| Usuario 1    | Ver disponibilidad | ✅    | 00:40   | Muy intuitivo                        |
+| Usuario 1    | Reservar cita      | ❌    | 00:55   | Confundido al seleccionar fecha      |
+| Usuario 1    | Cancelar cita      | ✅    | 00:58   | Confirmación clara                   |
+| Usuario 2    | Registro           | ✅    | 01:20   | Falta texto de ayuda                 |
+| Usuario 2    | Ver disponibilidad | ✅    | 00:45   | Colores ayudan                       |
+| Usuario 2    | Reservar cita      | ❌    | 01:10   | Botón no muy destacable              |
+| Usuario 2    | Cancelar cita      | ✅    | 00:50   | Mensaje redundante                   |
+| Usuario 3    | Registro           | ✅    | 01:30   | Formulario claro                     |
+| Usuario 3    | Ver disponibilidad | ✅    | 00:35   | Fácil navegación                     |
+| Usuario 3    | Reservar cita      | ✅    | 00:57   | Proceso rápido                       |
+| Usuario 3    | Cancelar cita      | ✅    | 00:55   | Proceso sencillo                     |
+| Usuario 4    | Registro           | ✅    | 01:15   | Validaciones confusas                |
+| Usuario 4    | Ver disponibilidad | ✅    | 00:42   | Calendario poco claro                |
+| Usuario 4    | Reservar cita      | ✅    | 00:50   | Botón destacable                     |
+| Usuario 4    | Cancelar cita      | ✅    | 00:60   | Confirmación clara                   |
+| Usuario 5    | Registro           | ✅    | 01:22   | Fácil de entender                    |
+| Usuario 5    | Ver disponibilidad | ✅    | 00:48   | Muy intuitivo                        |
+| Usuario 5    | Reservar cita      | ❌    | 01:05   | Mejorar feedback                     |
+| Usuario 5    | Cancelar cita      | ✅    | 00:58   | Proceso sencillo                     |
 
 ## Síntesis de resultados
 
 - **Tasa de éxito media**:  
-  - Registro:   
-  - Disponibilidad:   
-  - Reserva:   
-  - Cancelación:   
+  - Registro: 100 %  
+  - Ver disponibilidad: 100 %  
+  - Reservar cita: 80 %  
+  - Cancelar cita: 100 %  
 
-- **Observaciones clave**:  
-  1.   
-  2.   
-  3.   
-## Síntesis de resultados
-
-- **Tasa de éxito media**:  
-  - Registro: 100.0 %  
-  - Ver disponibilidad: 100.0 %  
-  - Reservar cita: 80.0 %  
-  - Cancelar cita: 100.0 %  
-
-- **Tiempo medio**:  
+- **Tiempo medio por tarea**:  
   - Registro: 01:20  
   - Ver disponibilidad: 00:42  
   - Reservar cita: 00:57  
   - Cancelar cita: 00:58  
 
 - **Observaciones clave**:  
-  1. Algunos usuarios tardaron más en encontrar el botón de reserva.  
-  2. El formulario de registro fue claro para todos.  
-  3. El calendario mostró buena usabilidad.
+  1. El botón de “Reservar” no es suficientemente visible para algunos usuarios.  
+  2. El formulario de registro carece de instrucciones de contraseña.  
+  3. El calendario es claro, pero podría destacar más los días libres.  
+
