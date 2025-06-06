@@ -31,18 +31,22 @@ public class CitaService {
     }
 
     /**
-     * Cancela una cita existente (si existe) cambiando su estado.
-     * @param citaId ID de la cita a cancelar.
-     * @return true si se canceló correctamente; false si no existía.
-     */
-    public boolean cancelarCita(int citaId) {
-        Cita existente = citaDAO.buscarPorId(citaId);
-        if (existente == null) {
-            return false; // No hay cita con ese ID
-        }
-        existente.setEstado("CANCELADA");
-        return citaDAO.actualizar(existente);
+ * Cancela una cita existente (si existe y no está ya cancelada) cambiando su estado.
+ * @param citaId ID de la cita a cancelar.
+ * @return true si se canceló correctamente; false si no existía o ya estaba cancelada.
+ */
+public boolean cancelarCita(int citaId) {
+    Cita existente = citaDAO.buscarPorId(citaId);
+    if (existente == null) {
+        return false; // No hay cita con ese ID
     }
+    if ("CANCELADA".equals(existente.getEstado())) {
+        return false; // Ya está cancelada
+    }
+    existente.setEstado("CANCELADA");
+    return citaDAO.actualizar(existente);
+}
+
 
     /**
      * Lista todas las citas (independientemente de su estado).
